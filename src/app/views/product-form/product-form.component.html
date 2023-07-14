@@ -1,0 +1,24 @@
+<mat-card>
+    <mat-card-title>
+        <h1>Alterando Produto</h1>
+    </mat-card-title>
+    <mat-card-content *ngIf="product">
+        <div>
+            <mat-form-field class="mr-8" [style.width.%]="30">
+                <mat-label>Código</mat-label>
+                <input matInput [(ngModel)]="product.code"/>
+            </mat-form-field>
+            <mat-form-field [style.width.%]="70">
+                <mat-label>Nome</mat-label>
+                <input matInput  [(ngModel)]="product.name"/>
+            </mat-form-field>
+        </div>
+        <div>
+            <mat-form-field [style.width.%]="100">
+                <mat-label>Descrição</mat-label>
+                <input matInput [(ngModel)]="product.description"/>
+            </mat-form-field>
+        </div>
+        
+    </mat-card-content>
+</mat-card>
